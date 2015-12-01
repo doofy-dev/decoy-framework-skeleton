@@ -1,0 +1,16 @@
+website_name: "Decoy skeleton application"
+
+Modules:
+  - Application
+
+debug: true
+error_page_controller: decoy\base\ErrorController
+
+use_database: false
+Database:
+  driver: pdo_mysql
+  host: localhost
+  user: root
+  charset: "utf8"
+  password:
+  dbname: public

@@ -1,0 +1,20 @@
+<?= $this->doctype() ?>
+<html lang="hu">
+<head>
+	<title><?= $this->globalConfig('website_name'); ?></title>
+	<?= $this->headMeta()
+		->appendName('viewport', 'initial-scale=1')
+		->appendName('charset', 'utf-8')
+		->prependCharset('utf-8')
+	?>
+
+	<?= $this->headLink()
+	?>
+
+	<?= $this->headScript()
+	?>
+</head>
+<body>
+<?= $this->content ?>
+</body>
+</html>

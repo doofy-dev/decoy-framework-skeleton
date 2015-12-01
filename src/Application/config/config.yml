@@ -1,0 +1,29 @@
+routes:
+  main:
+    route: "/"
+    controller: "application"
+    action: "index"
+
+  dynamic:
+    route: "/index[.:type](/)?$"
+    controller: "application"
+    constraint:
+      type: "(html|txt)"
+    default:
+      action: "index"
+      constraint:
+        type: "html"
+  rest:
+    route: "/rest"
+    controller: "rest"
+    action: "index"
+
+invokable:
+  application: "Application\Controller\Application"
+  rest: "Application\Controller\RestDemo"
+
+view:
+  application/text: "Application/view/text.phtml"
+  application/layout: "Application/view/layout.phtml"
+  application/error: "Application/view/error/error.phtml"
+

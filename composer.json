@@ -1,0 +1,5 @@
+{
+    "require": {
+        "teeebor/decoy-framework":"dev-master"
+    }
+}
